@@ -5,7 +5,7 @@ module Spacewalk
     password: '',
     http_verify: 'true'
   }.freeze
-  # Document here TODO: Make sure to update this doc
+  # Document here TODO: Make sure to update this documentation
   class Config
     def initialize(**opts)
       options = opts
