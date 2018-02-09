@@ -1,5 +1,3 @@
-require "spacewalk/version"
-
-module Spacewalk
-  # Your code goes here...
-end
+require 'spacewalk/version'
+require 'spacewalk/config'
+require 'spacewalk/client'
