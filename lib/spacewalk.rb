@@ -1,5 +1,5 @@
-require 'xmlrpc/client'
+require "xmlrpc/client"
 require 'spacewalk/version'
 require 'spacewalk/config'
-require 'spacewalk/client'
 require 'spacewalk/api'
+require 'spacewalk/client'
