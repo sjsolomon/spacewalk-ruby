@@ -23,8 +23,12 @@ module Spacewalk
       device = opts[:device]
       query = opts[:query]
 
-      device_id = get_system_id(device).last["id"]
-      execute_query(device_id, query)
+      device_id = get_system_id(device)
+      if device_id.empty?
+        device_id
+      else
+        execute_query(device_id.last["id"], query) unless device_id.empty?
+      end
     end
 
     def open_connection
